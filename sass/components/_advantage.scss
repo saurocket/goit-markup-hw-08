@@ -1,0 +1,67 @@
+// .adventage-container {
+//     width: 1200px;
+//     margin: 0 auto;
+//     padding-top: 95px;
+//     padding-bottom: 95px;
+// }
+
+// .advantage-list {
+//     display: flex;
+//     justify-content: center;
+//     align-items: flex-start;
+//     margin: 0 auto;
+//     &::not(:last-child) {
+//         margin-right: 30px;
+//     }
+// }
+
+.advantage-list{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 0 auto;
+}
+.advantage-list-item {
+    width: 270px;
+
+}
+
+.advantage-list-item-wrapper {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    border: 2px solid transparent;
+    transition: all 0.250s cubic-bezier(0.4, 0, 0.2, 1);
+   
+    & svg {
+    display: block;
+    margin: 25px auto;
+    width: 65px;
+    height: 70px;
+
+    }
+
+    &:hover {
+        border: 2px solid $blue;
+        fill: $blue;
+    }
+}
+
+.advantage-list-item h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.172;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.advantage-list-item p {
+    margin-top: 10px;
+    color: $gray;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+}

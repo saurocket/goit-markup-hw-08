@@ -1,0 +1,60 @@
+.partners {
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+.partners-container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.partners-list li {
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+    &:hover .partners-link svg,
+    &:hover {
+    border-color: $blue;
+    fill: $blue;
+}
+}
+.partners-list {
+    display: flex;
+    margin-top: 50px;
+}
+.partners-icon {
+    display: block;
+    width: 45px;
+    height: 50px;
+    fill: #AFB1B8;
+    margin: 20px auto;
+    transition: all 0.250s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.foster_pepers .partners-icon {
+    width: 80px;
+    height: 43px;
+}
+
+.brand .partners-icon {
+    width: 59px;
+    height: 47px;
+}
+
+.tag .partners-icon {
+    width: 89px;
+    height: 46px;
+}
+
+.partners-list .partners-link {
+    display: block;
+}
+

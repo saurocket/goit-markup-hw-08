@@ -1,0 +1,26 @@
+@import './utils/varibles';
+
+* {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto',
+        sans-serif;
+    color: #212121;
+    box-sizing: border-box;
+}
+
+/* Оформление hero */
+@import './components/header';
+@import './components/logo';
+@import './components/hero';
+@import './components/advantage';
+@import './components/activity';
+@import './components/team';
+@import './components/partners';
+@import './components/footer';
+@import './components/modal';
+
+/* Портнеры */
+/* Подвал */
+/* Оформление блока партфолио */
+/* Модальное окно */

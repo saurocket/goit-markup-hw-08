@@ -1,0 +1,103 @@
+.footer {
+    background-color: #2F303A;
+    font-family: 'Roboto',
+        sans-serif;
+}
+.footer-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo-web .nav-logo-studio {
+    color: #FFFFFF;
+}
+
+.footer-address {
+    display: flex;
+    font-style: normal;
+    align-items: baseline;
+}
+
+.footer-address-list {
+    margin-top: 20px;
+}
+
+.footer-address-list li {
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+.footer-address-list a {
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.social-network>p,
+.email-send p {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    line-height: 1.17;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+
+.social-network .team-socials li {
+    background-color: rgba(255, 255, 255, 0.1);
+    ;
+}
+
+.send-email-wrapper {
+    display: flex;
+}
+
+
+#email-send {
+    width: 360px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: $gray;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    line-height: 1.25;
+    background: inherit;
+}
+
+.btn-send {
+    display: block;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 10px 30px;
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #fff;
+    background-color: $blue;
+    border: none;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.btn-send span {
+    margin-left: 10px;
+}
+
+.footer-send-icon {
+    display: block;
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+
+}

@@ -1,0 +1,13 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto',
+        sans-serif;
+    color: #212121;
+    box-sizing: border-box;
+}
+@import './utils/varibles';
+@import './components/header';
+@import './components/team';
+@import './components/footer';
+@import './components/portfolio';

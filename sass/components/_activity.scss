@@ -1,0 +1,21 @@
+.activity-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.activity-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.activity-list li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.activity h2 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
