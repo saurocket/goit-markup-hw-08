@@ -1,17 +1,19 @@
 .team {
     margin-top: 95px;
     background-color: #F5F4FA;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .team-container {
-    width: 1200px;
+    // width: 1200px;
     margin: 0 auto;
 }
 
 .team h2,
 .partners-header {
-    padding-top: 95px;
-    font-size: 36px;
+    padding-top: 60px;
+    font-size: 28px;
     font-weight: 700;
     letter-spacing: 0.03em;
     text-align: center;
@@ -19,6 +21,7 @@
 
 .team-employer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-top: 50px;
     padding-bottom: 95px;

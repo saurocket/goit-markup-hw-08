@@ -32,17 +32,18 @@
 .team {
   margin-top: 95px;
   background-color: #F5F4FA;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .team-container {
-  width: 1200px;
   margin: 0 auto;
 }
 
 .team h2,
 .partners-header {
-  padding-top: 95px;
-  font-size: 36px;
+  padding-top: 60px;
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-align: center;
@@ -52,6 +53,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -129,47 +134,48 @@
 }
 
 .footer-container {
-  width: 1200px;
+  padding: 60px 15px;
   margin: 0 auto;
-  padding-top: 60px;
-  padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav-logo-web .nav-logo-studio {
   color: #FFFFFF;
 }
 
-.footer-address {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-style: normal;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
 .footer-address-list {
   margin-top: 20px;
+  text-align: center;
 }
 
 .footer-address-list li {
   color: #fff;
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+  margin-bottom: 8px;
 }
 
 .footer-address-list a {
   font-size: 14px;
+  font-weight: 400;
   line-height: 24px;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.social-network,
+.email-send {
+  margin-top: 60px;
 }
 
 .social-network > p,
@@ -181,16 +187,15 @@
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .social-network .team-socials li {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.send-email-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.email-send p {
+  text-align: center;
 }
 
 #email-send {
@@ -207,13 +212,13 @@
 
 .btn-send {
   display: block;
+  margin: 20px auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 10px;
   padding: 10px 30px;
   font-size: 16px;
   line-height: 1.875;
