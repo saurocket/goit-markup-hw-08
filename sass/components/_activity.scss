@@ -1,6 +1,10 @@
-.activity-container {
-    width: 1200px;
-    margin: 0 auto;
+.activity{
+    display: none;
+    .activity-container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    
 }
 
 .activity-list {
