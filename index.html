@@ -25,13 +25,17 @@
                             class="nav-logo-web-decoration-studio">Studio</span>
                     </span>
                 </a>
-                <svg class="header-icon icon-burger" width="24" height="16">
-                    <use xlink:href="sprite.svg#burger-menu"></use>
 
-                </svg>
-                <svg class="header-icon icon-close" width="19" height="19" style="display: none;">
-                    <use xlink:href="sprite.svg#burger-close"></use>
-                </svg>
+                <button class="header-btn">
+                    <svg class="header-icon icon-burger" width="24" height="16">
+                        <use xlink:href="sprite.svg#burger-menu"></use>
+
+                    </svg>
+                    <svg class="header-icon icon-close" width="19" height="19" style="display: none;">
+                        <use xlink:href="sprite.svg#burger-close"></use>
+                    </svg>
+                </button>
+
 
             </div>
 
@@ -131,8 +135,9 @@
             <div class="team-container">
                 <h2>Наша команда</h2>
                 <ul class="team-employer">
-                    <li>
-                        <img src="./image/section_4_1.jpg" alt="Фото дизайнера" width="270" height="260">
+                    <li class="team-employer-item">
+                        <img srcset="./image/section_4_1.jpg 1x, ./image/section_4_1x2.jpg 2x"
+                            src="./image/section_4_1.jpg" alt="Фото дизайнера" width="100%">
                         <h3>Игорь Демьяненко</h3>
                         <p lang="en">Product Designer</p>
 
@@ -169,8 +174,9 @@
                         </ul>
 
                     </li>
-                    <li>
-                        <img src="./image/section_4_2.jpg" alt="Фото разработчика" width="270" height="260">
+                    <li class="team-employer-item">
+                        <img srcset="./image/section_4_2.jpg 1x, ./image/section_4_2x2.jpg 2x"
+                            src="./image/section_4_2.jpg" alt="Фото разработчика" width="100%">
                         <h3>Ольга Репина</h3>
                         <p lang="en">Frontend Developer</p>
                         <ul class="team-socials">
@@ -205,8 +211,9 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <img src="./image/section_4_3.jpg" alt="Фото маркетолога" width="270" height="260">
+                    <li class="team-employer-item">
+                        <img srcset="./image/section_4_3.jpg 1x, ./image/section_4_3x2.jpg 2x"
+                            src="./image/section_4_3.jpg" alt="Фото маркетолога" width="100%">
                         <h3>Николай Тарасов</h3>
                         <p lang="en">Marketing</p>
                         <ul class="team-socials">
@@ -241,8 +248,9 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <img src="./image/section_4_4.jpg" alt="Фото дизайнера" width="270" height="260">
+                    <li class="team-employer-item">
+                        <img srcset="./image/section_4_4.jpg 1x, ./image/section_4_4x2.jpg 2x"
+                            src="./image/section_4_4.jpg" alt="Фото дизайнера" width="100%">
                         <h3>Михаил Ермаков</h3>
                         <p lang="en">UI Designer</p>
                         <ul class="team-socials">
@@ -337,58 +345,68 @@
     </main>
     <footer class="footer">
         <div class="footer-container">
-            <a class="nav-logo" href="./index.html">
-                <span class="nav-logo-web">
-                    <span class="nav-logo-web-decoration">V</span>eb<span
-                        class="nav-logo-web-decoration-studio nav-logo-studio">Studio</span>
-                </span>
-            </a>
-            <address class="footer-address">
-                <div class="footer-main-informacion">
-                    <ul class="footer-address-list">
-                        <li>г. Киев, пр-т Леси Украинки, 26</li>
-                        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a href="tel:+3809611111113">+38 096 111 11 11</a></li>
-                    </ul>
+            <div class="footer-container-main">
+                <div class="footer-left">
+                    <a class="nav-logo" href="./index.html">
+                        <span class="nav-logo-web">
+                            <span class="nav-logo-web-decoration">V</span>eb<span
+                                class="nav-logo-web-decoration-studio nav-logo-studio">Studio</span>
+                        </span>
+                    </a>
+                    <address class="footer-address">
+                        <div class="footer-main-informacion">
+                            <ul class="footer-address-list">
+                                <li>г. Киев, пр-т Леси Украинки, 26</li>
+                                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                                <li><a href="tel:+3809611111113">+38 096 111 11 11</a></li>
+                            </ul>
+
+                        </div>
+                    </address>
+
 
                 </div>
-            </address>
-            <div class="social-network">
-                <p>присоединяйтесь</p>
-                <ul class="team-socials">
-                    <li>
-                        <a href="" title="instagramm">
-                            <svg class="team-socials-icon">
-                                <use xlink:href="sprite.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" title="twitter">
-                            <svg class="team-socials-icon">
-                                <use xlink:href="sprite.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" title="faceboock">
-                            <svg class="team-socials-icon">
-                                <use xlink:href="sprite.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
 
-                    <li>
-                        <a href="" title="linkedin">
-                            <svg class="team-socials-icon">
-                                <use xlink:href="sprite.svg#linkedin"></use>
-                            </svg>
-                        </a>
+                <div class="social-network">
+                    <p>присоединяйтесь</p>
+                    <ul class="team-socials">
+                        <li>
+                            <a href="" title="instagramm">
+                                <svg class="team-socials-icon">
+                                    <use xlink:href="sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="twitter">
+                                <svg class="team-socials-icon">
+                                    <use xlink:href="sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="faceboock">
+                                <svg class="team-socials-icon">
+                                    <use xlink:href="sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" title="linkedin">
+                                <svg class="team-socials-icon">
+                                    <use xlink:href="sprite.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                     </li>
-                </ul>
-                </li>
-                </ul>
+                    </ul>
+                </div>
             </div>
+
+
+
             <div class="email-send">
 
                 <form>

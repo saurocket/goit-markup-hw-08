@@ -1,26 +1,40 @@
+@import '../utils/mixin';
+
 .footer {
     background-color: #2F303A;
     font-family: 'Roboto',
         sans-serif;
 }
 .footer-container {
-    // width: 1200px;
     padding: 60px 15px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include container();
+}
+.footer-container-main,
+.email-send
+{
+    text-align: center;
+}
+.social-network,
+.email-send {
+    margin-top: 60px;
 }
 
+
+
+
+@media screen and (min-width: 768px){
+    .footer-container-main{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    & .social-network{
+        margin: 0;
+    }
+}
 .nav-logo-web .nav-logo-studio {
     color: #FFFFFF;
 }
-
-// .footer-address {
-//     display: flex;
-//     font-style: normal;
-//     align-items: baseline;
-// }
 
 .footer-address-list {
     margin-top: 20px;
@@ -41,11 +55,7 @@
     }
 }
 
-.social-network,
-.email-send
-{
-    margin-top: 60px;
-}
+
 
 .social-network>p,
 .email-send p {
@@ -74,6 +84,9 @@
 }
 #email-send {
     width: 360px;
+    @media screen and (min-width: 768px){
+        width:450px;
+    }
     padding: 15px;
     font-size: 16px;
     font-weight: 400;

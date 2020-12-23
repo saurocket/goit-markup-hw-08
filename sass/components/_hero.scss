@@ -1,16 +1,14 @@
+
+@import '../utils/mixin';
 .hero {
-    background-image:
-        linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("../image/bgimage.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
     padding-bottom: 120px;
 }
-
 .hero h1 {
-    padding: 120px 60px 30px;
+    padding: 120px 0 30px;
     color: #FFFFFF;
     text-transform: uppercase;
     font-size: 26px;
@@ -30,4 +28,25 @@
     font-size: 16px;
     font-weight: 700;
 
+}
+
+@media screen and (max-width: 480px){
+    @include bgImage("../image/hero/Header-480.jpg", "../image/hero/Header@2x-480.jpg");
+}
+@media screen and (min-width: 481px){
+    @include bgImage("../image/hero/Header-768.jpg", "../image/hero/Header@2x-768.jpg");
+}
+@media screen and (min-width: 1200px){
+    @include bgImage("../image/hero/Header-1200.jpg", "../image/hero/Header-@2x-1200.jpg");
+    
+    .hero{
+        padding:200px 0;
+        & h1 {
+            padding:0;
+            font-size: 44px;
+        }
+        & .modal-open{
+            margin-top: 30px;
+        }
+    }
 }
