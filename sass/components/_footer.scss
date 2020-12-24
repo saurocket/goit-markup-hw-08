@@ -8,15 +8,28 @@
 .footer-container {
     padding: 60px 15px;
     @include container();
+    @media screen and (min-width: 1200px) {
+        padding: 60px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;    
+
+    }
 }
 .footer-container-main,
 .email-send
 {
     text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: left
+    }
 }
 .social-network,
 .email-send {
     margin-top: 60px;
+    @media screen and (min-width: 1200px){
+        margin-top: 10px;
+    }
 }
 
 
@@ -32,11 +45,28 @@
         margin: 0;
     }
 }
+@media screen and (min-width: 1200px){
+    .footer-container-main {
+        align-items: baseline;
+    }
+}
+
 .nav-logo-web .nav-logo-studio {
     color: #FFFFFF;
+    
+}
+@media screen and (min-width: 1200px) {
+    .nav-logo{
+        font-size: 26px;
+    }
+    
 }
 
 .footer-address-list {
+    @media screen and (min-width: 1200px){
+        margin-right: 70px;
+        text-align: left;
+    }
     margin-top: 20px;
     text-align: center;
     & li {
@@ -67,25 +97,24 @@
     font-weight: 700;
     letter-spacing: 0.03em;
     text-align: center;
+      @media screen and (min-width: 1200px) {
+          text-align: left;
+      }
+    
 }
 
 .social-network .team-socials li {
     background-color: rgba(255, 255, 255, 0.1);
-    ;
 }
 
-
-.email-send{
-    p{
-        text-align: center;
-
-    }
-    
-}
+ 
 #email-send {
     width: 360px;
     @media screen and (min-width: 768px){
         width:450px;
+    }
+    @media screen and (min-width: 1200px) {
+        width:360px;
     }
     padding: 15px;
     font-size: 16px;
@@ -96,7 +125,17 @@
     line-height: 1.25;
     background: inherit;
 }
+@media screen and (min-width: 1200px) {
+    .send-email-wrapper{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
 
+        .btn-send{
+            margin: 0 10px;
+        }
+    }
+}
 .btn-send {
    display: block;
     margin: 20px auto 0;
@@ -124,5 +163,6 @@
     fill: #fff;
     width: 24px;
     height: 24px;
+    
 
 }

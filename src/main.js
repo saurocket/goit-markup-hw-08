@@ -1,7 +1,20 @@
 "use strict";
 window.addEventListener('DOMContentLoaded', () => {
-    
-
+//     const navMenu = document.querySelector('.backdrop');
+//     window.addEventListener('resize',function(){
+//         console.log(document.body.clientWidth);
+//         if (document.body.clientWidth > 768) {
+//             navMenu.style.display = 'none';
+//     }    
+// });
+    function addActive() {
+        const link = document.querySelectorAll('.nav-list-link li');
+        link.forEach(item => {
+            item.classList.remove('active-link'); 
+        });
+        link[0].classList.add('active-link');
+    }
+    addActive(); 
     function modal(trigger, modal, close) {
         console.log('modal');
         const btnOpen = document.querySelector(trigger),

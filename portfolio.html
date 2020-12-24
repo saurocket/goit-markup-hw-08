@@ -17,41 +17,53 @@
 <body>
     <header>
         <div class="header-container">
+            <div class="logo-container">
+                <a class="nav-logo" href="./index.html">
+                    <span class="nav-logo-web">
+                        <span class="nav-logo-web-decoration">V</span>eb<span
+                            class="nav-logo-web-decoration-studio">Studio</span>
+                    </span>
+                </a>
+
+                <button class="header-btn">
+                    <svg class="header-icon icon-burger" width="24" height="16">
+                        <use xlink:href="sprite.svg#burger-menu"></use>
+
+                    </svg>
+                    <svg class="header-icon icon-close" width="19" height="19" style="display: none;">
+                        <use xlink:href="sprite.svg#burger-close"></use>
+                    </svg>
+                </button>
+
+
+            </div>
+
             <nav class="nav">
-                <div class="nav-logo">
-                    <a href="./index.html">
-
-                        <span class="nav-logo-web">
-                            <span class="nav-logo-web-decoration">V</span>eb<span
-                                class="nav-logo-web-decoration-studio">Studio</span>
-                        </span>
-
-                    </a>
-                </div>
                 <ul class="nav-list nav-list-link">
                     <li><a href="index.html">Студия</a></li>
                     <li><a href="portfolio.html">Портфолио</a></li>
                     <li><a href="">Контакты</a></li>
                 </ul>
+                <ul class="nav-list nav-list-contact">
+                    <li>
+                        <span>
+                            <svg class="nav-list-icon icon-email">
+                                <use xlink:href="sprite.svg#email"></use>
+                            </svg>
+                        </span>
+                        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <span>
+                            <svg class="nav-list-icon">
+                                <use xlink:href="sprite.svg#tel"></use>
+                            </svg>
+                        </span>
+                        <a href="tel:+3809611111113">+38 096 111 11 11</a>
+                    </li>
+                </ul>
             </nav>
-            <ul class="nav-list nav-list-contact">
-                <li>
-                    <span>
-                        <svg class="nav-list-icon icon-email">
-                            <use xlink:href="sprite.svg#email"></use>
-                        </svg>
-                    </span>
-                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li>
-                    <span>
-                        <svg class="nav-list-icon">
-                            <use xlink:href="sprite.svg#tel"></use>
-                        </svg>
-                    </span>
-                    <a href="tel:+3809611111113">+38 096 111 11 11</a>
-                </li>
-            </ul>
+
         </div>
     </header>
 
@@ -74,7 +86,8 @@
                             <a href="">
                                 <div class="partfolio-box-wrapper">
                                     <div class="img-box">
-                                        <img src="./image/portfolio/portfolio-1.jpg" alt="ноутбук" width="370">
+                                        <img srcset="./image/portfolio/portfolio-1.jpg 1x, ./image/portfolio/portfolio-1@2.jpg 2x"
+                                            src="./image/portfolio/portfolio-1.jpg" alt="ноутбук" width="100%">
                                         <div class="overlay">
                                             <p>Технокряк это современная площадка распространения коронавируса. Компании
                                                 используют эту платформу для цифрового шпионажа и атак на защищённые
@@ -94,7 +107,8 @@
 
 
                                     <div class="img-box">
-                                        <img src="./image/portfolio/portfolio-2.jpg" alt="баскетболисты" width="370">
+                                        <img srcset="./image/portfolio/portfolio-2.jpg 1x, ./image/portfolio/portfolio-2@2.jpg 2x"
+                                            src="./image/portfolio/portfolio-2.jpg" alt="баскетболисты" width="100%">
                                         <div class="overlay">
                                             <p>Технокряк это современная площадка распространения коронавируса. Компании
                                                 используют эту платформу для цифрового шпионажа и атак на защищённые
@@ -111,7 +125,8 @@
                             <a href="">
                                 <div class="partfolio-box-wrapper">
                                     <div class="img-box">
-                                        <img src="./image/portfolio/portfolio-3.jpg" alt="рыба" width="370">
+                                        <img srcset="./image/portfolio/portfolio-3.jpg 1x, ./image/portfolio/portfolio-3@2.jpg 2x"
+                                            src="./image/portfolio/portfolio-3.jpg" alt="рыба" width="100%">
                                         <div class="overlay">
                                             <p>Технокряк это современная площадка распространения коронавируса.
                                                 Компании
@@ -130,7 +145,8 @@
                             <a href="">
                                 <div class="partfolio-box-wrapper">
                                     <div class="img-box">
-                                        <img src="./image/portfolio/portfolio-4.jpg" alt="наушники" width="370">
+                                        <img srcset="./image/portfolio/portfolio-4.jpg 1x, ./image/portfolio/portfolio-4@2.jpg 2x"
+                                            src="./image/portfolio/portfolio-4.jpg" alt="наушники" width="100%">
                                         <div class="overlay">
                                             <p>Технокряк это современная площадка распространения коронавируса.
                                                 Компании
@@ -149,7 +165,9 @@
                             <a href="">
                                 <div class="partfolio-box-wrapper">
                                     <div class="img-box">
-                                        <img src="./image/portfolio/portfolio-5.jpg" alt="коробки" width="370">
+                                        <img srcset="./image/portfolio/portfolio-5.jpg 1x, ./image/portfolio/portfolio-5@2.jpg 2x"
+                                            src="./image/portfolio/portfolio-5.jpg" alt="коробки" width="100%">
+
                                         <div class="overlay">
                                             <p>Технокряк это современная площадка распространения коронавируса.
                                                 Компании
@@ -169,7 +187,12 @@
                                 <div class="partfolio-box-wrapper">
 
                                     <div class="img-box">
-                                        <img src="./image/portfolio/portfolio-6.jpg" alt="монитор" width="370">
+
+                                        <img srcset="./image/portfolio/portfolio-6.jpg 1x, ./image/portfolio/portfolio-6@2.jpg 2x"
+                                            src="./image/portfolio/portfolio-6.jpg" alt="монитор" width="100%">
+
+
+
                                         <div class="overlay">
                                             <p>Технокряк это современная площадка распространения коронавируса.
                                                 Компании
@@ -188,7 +211,11 @@
                             <a href="">
                                 <div class="partfolio-box-wrapper">
                                     <div class="img-box">
-                                        <img src="./image/portfolio/portfolio-7.jpg" alt="книга" width="370">
+
+                                        <img srcset="./image/portfolio/portfolio-7.jpg 1x, ./image/portfolio/portfolio-7@2.jpg 2x"
+                                            src="./image/portfolio/portfolio-7.jpg" alt="баскетболисты" width="100%">
+
+
                                         <div class="overlay">
                                             <p>Технокряк это современная площадка распространения коронавируса.
                                                 Компании
@@ -207,7 +234,11 @@
                             <a href="">
                                 <div class="partfolio-box-wrapper">
                                     <div class="img-box">
-                                        <img src="./image/portfolio/portfolio-8.jpg" alt="бирка" width="370">
+
+                                        <img srcset="./image/portfolio/portfolio-8.jpg 1x, ./image/portfolio/portfolio-8@2.jpg 2x"
+                                            src="./image/portfolio/portfolio-8.jpg" alt="этикетка" width="100%">
+
+
                                         <div class="overlay">
                                             <p>Технокряк это современная площадка распространения коронавируса.
                                                 Компании
@@ -226,7 +257,11 @@
                             <a href="">
                                 <div class="partfolio-box-wrapper">
                                     <div class="img-box">
-                                        <img src="./image/portfolio/portfolio-9.jpg" alt="ноутбук" width="370">
+
+                                        <img srcset="./image/portfolio/portfolio-9.jpg 1x, ./image/portfolio/portfolio-9@2.jpg 2x"
+                                            src="./image/portfolio/portfolio-9.jpg" alt="баскетболисты" width="100%">
+
+
                                         <div class="overlay">
                                             <p>Технокряк это современная площадка распространения коронавируса.
                                                 Компании
@@ -251,62 +286,68 @@
     </main>
     <footer class="footer">
         <div class="footer-container">
-            <address class="footer-address">
-                <div class="footer-main-informacion">
-                    <div class="nav-logo">
-                        <a href="./index.html">
+            <div class="footer-container-main">
+                <div class="footer-left">
+                    <a class="nav-logo" href="./index.html">
+                        <span class="nav-logo-web">
+                            <span class="nav-logo-web-decoration">V</span>eb<span
+                                class="nav-logo-web-decoration-studio nav-logo-studio">Studio</span>
+                        </span>
+                    </a>
+                    <address class="footer-address">
+                        <div class="footer-main-informacion">
+                            <ul class="footer-address-list">
+                                <li>г. Киев, пр-т Леси Украинки, 26</li>
+                                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                                <li><a href="tel:+3809611111113">+38 096 111 11 11</a></li>
+                            </ul>
 
+                        </div>
+                    </address>
 
-                            <span class="nav-logo-web">
-                                <span class="nav-logo-web-decoration">V</span>eb<span
-                                    class="nav-logo-web-decoration-studio nav-logo-studio">Studio</span>
-                            </span>
-                        </a>
-                    </div>
-                    <ul class="footer-address-list">
-                        <li>г. Киев, пр-т Леси Украинки, 26</li>
-                        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a href="tel:+3809611111113">+38 096 111 11 11</a></li>
-                    </ul>
 
                 </div>
-            </address>
-            <div class="social-network">
-                <p>присоединяйтесь</p>
-                <ul class="team-socials">
-                    <li>
-                        <a href="" title="instagramm">
-                            <svg class="team-socials-icon">
-                                <use xlink:href="sprite.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" title="twitter">
-                            <svg class="team-socials-icon">
-                                <use xlink:href="sprite.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" title="faceboock">
-                            <svg class="team-socials-icon">
-                                <use xlink:href="sprite.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
 
-                    <li>
-                        <a href="" title="linkedin">
-                            <svg class="team-socials-icon">
-                                <use xlink:href="sprite.svg#linkedin"></use>
-                            </svg>
-                        </a>
+                <div class="social-network">
+                    <p>присоединяйтесь</p>
+                    <ul class="team-socials">
+                        <li>
+                            <a href="" title="instagramm">
+                                <svg class="team-socials-icon">
+                                    <use xlink:href="sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="twitter">
+                                <svg class="team-socials-icon">
+                                    <use xlink:href="sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="faceboock">
+                                <svg class="team-socials-icon">
+                                    <use xlink:href="sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" title="linkedin">
+                                <svg class="team-socials-icon">
+                                    <use xlink:href="sprite.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                     </li>
-                </ul>
-                </li>
-                </ul>
+                    </ul>
+                </div>
             </div>
+
+
+
             <div class="email-send">
 
                 <form>

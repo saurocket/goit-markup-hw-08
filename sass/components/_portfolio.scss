@@ -1,6 +1,17 @@
+@import '../utils/mixin';
 .partfolio-container {
-    margin: auto 215px;
-    padding-bottom: 95px;
+    @include container;
+     padding-bottom: 95px;
+    @media screen and (max-width: 1199px){
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @media screen and (max-width: 767px){
+        padding-bottom: 50px;
+    }
+    @media screen and (max-width: 1199px) {
+        padding-bottom: 30px;
+    }
 }
 
 .partfolio-nav-list {
@@ -10,14 +21,32 @@
     margin-bottom: 50px;
     font-weight: 500;
     font-size: 16px;
+    line-height: 1.4;
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+     @media screen and (max-width: 1199px) {
+         margin-top: 60px;
+         margin-bottom: 45px;
+     }
+
+
+
+    
 }
 
 .partfolio-nav-list li {
+    
     cursor: pointer;
-    padding: 5px 20px;
+    padding: 8px 20px;
     border-radius: 4px;
     background-color: #F5F4FA;
     transition: all 0.250s cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+    }
 }
 
 .partfolio-nav-list .active {
@@ -40,22 +69,34 @@
 }
 
 .partfolio-examples {
-    display: flex;
-    justify-content: center;
+   margin: 0 auto;
 }
 
 .partfolio-examples-list {
-    margin: 0 auto;
-    min-width: 1200px;
+    // margin-left: auto;
+    // margin-right: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @media screen and (max-width: 1199px) {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
 
 }
 
 .partfolio-examples-list li {
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
     transition: all 0.250s cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width: 767px){
+        flex-basis: calc(100% - 30px);
+    }
+     @media screen and (min-width: 768px) {
+         flex-basis: calc((100% - 60px) / 2);
+     }
+     @media screen and (min-width: 1200px) {
+         flex-basis: calc((100% - 90px) / 3);
+     }
 
 }
 
@@ -66,9 +107,9 @@
 }
 
 
-.partfolio-examples-list li:not(:nth-child(3n + 3)) {
-    margin-right: 30px;
-}
+// .partfolio-examples-list li:not(:nth-child(3n + 3)) {
+//     margin-right: 30px;
+// }
 
 .partfolio-box-wrapper h3 {
 

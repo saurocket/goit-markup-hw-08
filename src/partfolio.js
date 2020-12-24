@@ -1,6 +1,16 @@
 "use strict";
 window.addEventListener('DOMContentLoaded', () => {
    
+ function addActive() {
+        const link = document.querySelectorAll('.nav-list-link li');
+        link.forEach(item => {
+            item.classList.remove('active-link'); 
+        });
+        link[1].classList.add('active-link');
+    }
+addActive();
+
+
     function filter(navlist, container) {
         const btnList = document.querySelector(navlist),
             exampls = document.querySelectorAll(container);
@@ -27,6 +37,31 @@ window.addEventListener('DOMContentLoaded', () => {
     }
    
     filter('.partfolio-nav', '.partfolio-examples-list li');
+
+ const navBtn = document.querySelector('.header-btn');
+    let countClass = 0;
+    function openMenu() {
+        navBtn.addEventListener('click', () => {
+            const navMenu = document.querySelector('.nav'),
+                burgerIcon = document.querySelector('.icon-burger'),
+                closeIcon = document.querySelector('.icon-close');
+            if (countClass === 0) {
+                navMenu.style.display = 'block';
+                burgerIcon.style.display = 'none';
+                closeIcon.style.display = '';
+                countClass = 1;
+            }
+            else {
+                navMenu.style.display = 'none';
+                burgerIcon.style.display = '';
+                closeIcon.style.display = 'none';
+                countClass = 0;
+            }
+        });
+    }
+    openMenu();
+
+
 });
 
 

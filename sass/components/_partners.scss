@@ -5,8 +5,14 @@
         padding-right: 15px;
         @include container();
         // align-items: center;
-    } 
+        @media screen and (min-width: 1200px) {
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-bottom: 95px;
+        }
 
+
+    }
 
 .partners-list {
     display: flex;
@@ -15,6 +21,11 @@
     margin-left: -15px;
     margin-right: -15px;
     justify-content: space-between;
+     @media screen and (min-width: 1200px){
+          margin-left: 0px;
+          margin-right: 0px;
+          flex-wrap: nowrap;
+     }
 
 }
 
@@ -26,6 +37,9 @@
     @media screen and (min-width: 768px){
         flex-basis: calc((100% - 3 * 30px) / 3);
     }
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 5 * 30px) / 6);
+    }
     height: 90px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -34,6 +48,9 @@
     &:hover {
     border-color: $blue;
     fill: $blue;
+    }
+    @media screen and (min-width: 1200px){
+        margin-bottom: 0;
     }
 }
 

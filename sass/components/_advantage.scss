@@ -5,6 +5,9 @@
     @media screen  and (min-width: 768px){
         padding-bottom: 0;
     }
+    @media screen and (min-width: 1200px){
+        padding: 90px 15px;
+    }
 }
 
 .advantage-list{
@@ -48,8 +51,8 @@ margin: 0 auto;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        margin-left: -15px;
-        margin-right: -15px;
+        margin-left: 0;
+        margin-right: 0;
             & .advantage-list-item {
                 flex-basis: calc((100% - 120px) / 4);
                 margin-bottom: 30px;
